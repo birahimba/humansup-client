@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "humansup-client"
-  }
+    "default": "humansup-client",
+    "hs": "humansup-client"
+  },
+  "targets": {}
 }
