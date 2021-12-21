@@ -2,5 +2,13 @@
   "projects": {
     "default": "humansup-client"
   },
-  "targets": {}
+  "targets": {
+    "humansup-client": {
+      "hosting": {
+        "humansup-client": [
+          "humansup-client"
+        ]
+      }
+    }
+  }
 }
