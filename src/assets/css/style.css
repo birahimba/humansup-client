@@ -516,6 +516,14 @@ ul.dropdown-menu li {
   position: relative;
 }
 
+.slider2 {
+  background: url("../images/home-9.jpeg") no-repeat;
+  background-size:cover;
+  background-position: 10% 0%;
+  padding: 200px 0 280px 0;
+  position: relative;
+}
+
 .slider .block h1 {
   font-size: 70px;
   line-height: 80px;
