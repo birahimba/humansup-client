@@ -499,7 +499,7 @@ ul.dropdown-menu li {
 }
 
 .bg-1 {
-  background: url("../images/bg/home-2.jpg") no-repeat 50% 50%;
+  background: url("../images/about.jpeg") no-repeat 50% 50%;
   background-size: cover;
 }
 
@@ -511,6 +511,14 @@ ul.dropdown-menu li {
 .slider {
   background: url("../images/home-1.jpeg") no-repeat;
   background-size: cover;
+  background-position: 10% 0%;
+  padding: 200px 0 280px 0;
+  position: relative;
+}
+
+.slider2 {
+  background: url("../images/home-9.jpeg") no-repeat;
+  background-size:cover;
   background-position: 10% 0%;
   padding: 200px 0 280px 0;
   position: relative;
