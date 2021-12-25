@@ -17,11 +17,8 @@ import { AngularFireModule } from "@angular/fire";
 import { AngularFireAuthModule } from "@angular/fire/auth";
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
-import { DashboardComponent } from './admin/dashboard/dashboard.component';
-import { ForgotPasswordComponent } from './admin/forgot-password/forgot-password.component';
-import { SignInComponent } from './admin/sign-in/sign-in.component';
-import { SignUpComponent } from './admin/sign-up/sign-up.component';
-import { VerifyEmailComponent } from './admin/verify-email/verify-email.component';
+import { AdminClientModule } from './admin-client/admin-client.module';
+
 
 
 @NgModule({
@@ -36,12 +33,7 @@ import { VerifyEmailComponent } from './admin/verify-email/verify-email.componen
     ContactComponent,
     PagenotfoundComponent,
     FooterComponent,
-    MaintenanceComponent,
-    DashboardComponent,
-    ForgotPasswordComponent,
-    SignInComponent,
-    SignUpComponent,
-    VerifyEmailComponent,
+    MaintenanceComponent
 
   ],
   imports: [
@@ -50,6 +42,7 @@ import { VerifyEmailComponent } from './admin/verify-email/verify-email.componen
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFirestoreModule,
+    AdminClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
