@@ -18,6 +18,8 @@ import { AngularFireAuthModule } from "@angular/fire/auth";
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
 import { AdminClientModule } from './admin-client/admin-client.module';
+import { AuthService } from './shared/services/auth.service';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -42,9 +44,10 @@ import { AdminClientModule } from './admin-client/admin-client.module';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFirestoreModule,
-    AdminClientModule
+    AdminClientModule,
+    FormsModule,
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
