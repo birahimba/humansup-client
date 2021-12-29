@@ -17,10 +17,14 @@ import { AngularFireModule } from "@angular/fire";
 import { AngularFireAuthModule } from "@angular/fire/auth";
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
-import { AdminClientModule } from './admin-client/admin-client.module';
-import { AuthService } from './shared/services/auth.service';
 import { FormsModule } from '@angular/forms';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { HttpClient } from '@angular/common/http';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
+export function createTranslateLoader (httpClient: HttpClient){
+  return new TranslateHttpLoader(httpClient, './assets/i18n/', '.json');
+}
 
 
 @NgModule({
@@ -44,10 +48,16 @@ import { FormsModule } from '@angular/forms';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFirestoreModule,
-    AdminClientModule,
     FormsModule,
+    TranslateModule.forRoot({
+      loader:{
+        provide: TranslateLoader,
+        useFactory: (createTranslateLoader),
+        deps:[HttpClient]
+      }
+    })
   ],
-  providers: [AuthService],
+ 
   bootstrap: [AppComponent]
 })
 export class AppModule { }

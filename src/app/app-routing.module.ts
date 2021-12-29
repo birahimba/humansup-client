@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DashboardComponent } from './admin-client/dashboard/dashboard.component';
-import { SigninComponent } from './admin-client/signin/signin.component';
 import { AboutComponent } from './client/about/about.component';
 import { ContactComponent } from './client/contact/contact.component';
 import { EventsComponent } from './client/events/events.component';
@@ -17,8 +15,6 @@ const routes: Routes = [
   { path: 'events', component: EventsComponent},
   { path: 'news', component: NewsComponent},
   { path: 'contact', component: ContactComponent},
-  { path: 'admin-client/signin', component: SigninComponent},
-  { path: 'admin-client/dashboard', component: DashboardComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', pathMatch: 'full', component: PagenotfoundComponent },
 
