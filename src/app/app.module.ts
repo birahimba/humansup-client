@@ -13,15 +13,17 @@ import { ContactComponent } from './client/contact/contact.component';
 import { PagenotfoundComponent } from './client/pagenotfound/pagenotfound.component';
 import { FooterComponent } from './client/footer/footer.component';
 import { MaintenanceComponent } from './client/maintenance/maintenance.component';
-import { AngularFireModule } from "@angular/fire";
-import { AngularFireAuthModule } from "@angular/fire/auth";
-import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireModule } from "@angular/fire/compat";
+import { AngularFireAuthModule } from "@angular/fire/compat/auth";
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { environment } from '../environments/environment';
-import { DashboardComponent } from './admin/dashboard/dashboard.component';
-import { ForgotPasswordComponent } from './admin/forgot-password/forgot-password.component';
-import { SignInComponent } from './admin/sign-in/sign-in.component';
-import { SignUpComponent } from './admin/sign-up/sign-up.component';
-import { VerifyEmailComponent } from './admin/verify-email/verify-email.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClient} from '@angular/common/http';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
+export function createTranslateLoader (httpClient: HttpClient){
+  return new TranslateHttpLoader(httpClient, './assets/i18n/', '.json');
+}
 
 
 @NgModule({
@@ -36,12 +38,7 @@ import { VerifyEmailComponent } from './admin/verify-email/verify-email.componen
     ContactComponent,
     PagenotfoundComponent,
     FooterComponent,
-    MaintenanceComponent,
-    DashboardComponent,
-    ForgotPasswordComponent,
-    SignInComponent,
-    SignUpComponent,
-    VerifyEmailComponent,
+    MaintenanceComponent
 
   ],
   imports: [
@@ -50,8 +47,9 @@ import { VerifyEmailComponent } from './admin/verify-email/verify-email.componen
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFirestoreModule,
+    FormsModule
   ],
-  providers: [],
+ 
   bootstrap: [AppComponent]
 })
 export class AppModule { }
