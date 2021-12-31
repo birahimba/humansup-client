@@ -3,23 +3,25 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './client/navbar/navbar.component';
-import { HomeComponent } from './client/home/home.component';
-import { AboutComponent } from './client/about/about.component';
-import { ProgramsComponent } from './client/programs/programs.component';
-import { EventsComponent } from './client/events/events.component';
-import { NewsComponent } from './client/news/news.component';
-import { ContactComponent } from './client/contact/contact.component';
-import { PagenotfoundComponent } from './client/pagenotfound/pagenotfound.component';
-import { FooterComponent } from './client/footer/footer.component';
-import { MaintenanceComponent } from './client/maintenance/maintenance.component';
+import { NavbarComponent } from './client-component/navbar/navbar.component';
+import { HomeComponent } from './client-component/home/home.component';
+import { AboutComponent } from './client-component/about/about.component';
+import { ProgramsComponent } from './client-component/programs/programs.component';
+import { EventsComponent } from './client-component/events/events.component';
+import { NewsComponent } from './client-component/news/news.component';
+import { ContactComponent } from './client-component/contact/contact.component';
+import { PagenotfoundComponent } from './client-component/pagenotfound/pagenotfound.component';
+import { FooterComponent } from './client-component/footer/footer.component';
+import { MaintenanceComponent } from './client-component/maintenance/maintenance.component';
 import { AngularFireModule } from "@angular/fire/compat";
 import { AngularFireAuthModule } from "@angular/fire/compat/auth";
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { environment } from '../environments/environment';
 import { FormsModule } from '@angular/forms';
 import { HttpClient} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
 export function createTranslateLoader (httpClient: HttpClient){
   return new TranslateHttpLoader(httpClient, './assets/i18n/', '.json');
@@ -47,7 +49,15 @@ export function createTranslateLoader (httpClient: HttpClient){
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFirestoreModule,
-    FormsModule
+    HttpClientModule,
+    FormsModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (createTranslateLoader),
+        deps: [HttpClient]
+      }
+    })
   ],
  
   bootstrap: [AppComponent]
