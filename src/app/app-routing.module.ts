@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'events', component: EventsComponent},
   { path: 'news', component: NewsComponent},
   { path: 'contact', component: ContactComponent},
-  { path: '', redirectTo: '/maintenance', pathMatch: 'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', pathMatch: 'full', component: PagenotfoundComponent },
 
 ];

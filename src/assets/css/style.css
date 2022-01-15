@@ -117,7 +117,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 
 .btn-solid-border {
   border: 2px solid #a31925;
-  background: transparent;
+  background: #a31925;
   color: #242424;
 }
 
@@ -388,18 +388,21 @@ a:focus {
 }
 
 #navbar {
-  background: #1c1c1d;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  background: #ffffff;
+  box-shadow: 0 1px 2px rgba(70, 69, 69, 0.05);
+  padding: 0;
+  display: inline;
 }
 
 #navbar li {
   padding-left: 15px;
+ 
 }
 
 #navbar .nav-link {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  color: #fff;
+  font-family: "Poppins",  sans-serif;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
   text-transform: uppercase;
   font-size: 16px;
   letter-spacing: .5px;
@@ -450,6 +453,7 @@ a:focus {
   color: #fff;
   font-weight: 600;
   letter-spacing: 1px;
+  
 }
 
 .navbar-brand span {
@@ -499,7 +503,7 @@ ul.dropdown-menu li {
 }
 
 .bg-1 {
-  background: url("../images/about.jpeg") no-repeat 50% 50%;
+  background: url("../images/ab.jpeg") no-repeat 50% 50%;
   background-size: cover;
 }
 
@@ -509,7 +513,7 @@ ul.dropdown-menu li {
 }
 
 .slider {
-  background: url("../images/home-1.jpeg") no-repeat;
+  background: url("../images/ab.jpeg") no-repeat;
   background-size: cover;
   background-position: 10% 0%;
   padding: 200px 0 280px 0;
@@ -691,13 +695,13 @@ ul.dropdown-menu li {
 }
 
 .cta {
-  background: url("../images/bg/home-3.jpg") fixed 50% 50%;
+  background: url("../images/home-1.jpeg") fixed 50% 50%;
   background-size: cover;
   padding: 120px 0px;
 }
 
 .cta-block {
-  background: url("../images/bg/home-3.jpg") no-repeat;
+  background: url("../images/home-1.jpeg") no-repeat;
   background-size: cover;
 }
 
@@ -1285,7 +1289,7 @@ h3.quote::before {
     display: block;
   }
   .navbar-toggler {
-    color: #fff;
+    color: rgb(8, 8, 8);
   }
   .slider .block h1 {
     font-size: 28px;
@@ -1344,7 +1348,7 @@ h3.quote::before {
     margin-left: 0px;
   }
   .navbar-toggler {
-    color: #fff;
+    color: rgb(0, 0, 0);
   }
   .slider .block h1 {
     font-size: 38px;
@@ -1395,7 +1399,7 @@ h3.quote::before {
 
 @media (max-width: 768px) {
   .navbar-toggler {
-    color: #fff;
+    color: rgb(0, 0, 0);
   }
   .bg-about {
     display: none;
