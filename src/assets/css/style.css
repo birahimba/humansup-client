@@ -411,6 +411,7 @@ a:focus {
 
 #navbar .nav-link:hover, #navbar .nav-link:focus {
   color: #9c1c26;
+  border-bottom: 0.5rem solid;
 }
 
 #navbar .btn {
@@ -504,6 +505,16 @@ ul.dropdown-menu li {
 
 .bg-1 {
   background: url("../images/ab.jpeg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.programs{
+  background: url("../images/programs.jpeg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.contact{
+  background: url("../images/contact.jpeg") no-repeat 50% 50%;
   background-size: cover;
 }
 

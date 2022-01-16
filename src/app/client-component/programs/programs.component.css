@@ -1,0 +1,14 @@
+hr{
+    border: 1px solid rgb(158, 25, 25);
+}
+
+.cu{
+    font-weight: bold;
+    color: rgb(240, 120, 9);
+}
+
+
+.cu-bloc{
+    padding-left: 30px ;
+    border-left: solid rgb(199, 199, 199);
+}
