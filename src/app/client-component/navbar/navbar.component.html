@@ -6,21 +6,21 @@
 			</a>
 
 			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
-				data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false"
+				data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
 				aria-label="Toggle navigation">
 				<span class="fa fa-bars"></span>
 			</button>
 
-			<div class="collapse navbar-collapse text-center" id="navbarsExample09">
+			<div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item active">
-						<a class="nav-link" routerLink="/home">{{"Home" | translate}}<span class="sr-only">(current)</span></a>
+						<a class="nav-link" routerLink="/home" (click)="ToggleNavBar()">{{"Home" | translate}}<span class="sr-only">(current)</span></a>
 					</li>
-					<li class="nav-item"><a class="nav-link" routerLink="/about">About Humansup</a></li>
-					<li class="nav-item"><a class="nav-link" routerLink="/programs">Training programs</a></li>
-					<li class="nav-item"><a class="nav-link" routerLink="/home">Events</a></li>
-					<li class="nav-item"><a class="nav-link" routerLink="/home">News</a></li>
-					<li class="nav-item"><a class="nav-link" routerLink="/contact">Contact</a></li>
+					<li class="nav-item" ><a class="nav-link" routerLink="/about" (click)="ToggleNavBar()">About Humansup</a></li>
+					<li class="nav-item"><a class="nav-link" routerLink="/programs" (click)="ToggleNavBar()">Training programs</a></li>
+					<li class="nav-item"><a class="nav-link" routerLink="/home" (click)="ToggleNavBar()">Events</a></li>
+					<li class="nav-item"><a class="nav-link" routerLink="/home" (click)="ToggleNavBar()">News</a></li>
+					<li class="nav-item"><a class="nav-link" routerLink="/contact" (click)="ToggleNavBar()">Contact</a></li>
 				</ul>
 
 				<form class="form-lg-inline my-2 my-md-0 ml-lg-4 text-center">
