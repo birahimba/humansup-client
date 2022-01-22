@@ -1,5 +1,5 @@
 /*=== MEDIA QUERY ===*/
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700|Poppins:300,400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Poppins:300,400,600,700);
 @import url(https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700);
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:300,400,500,600,700);
 html {
@@ -523,13 +523,6 @@ ul.dropdown-menu li {
   background-size: cover;
 }
 
-.slider {
-  background: url("../images/ab.jpeg") no-repeat;
-  background-size: cover;
-  background-position: 10% 0%;
-  padding: 200px 0 280px 0;
-  position: relative;
-}
 
 .slider2 {
   background: url("../images/home-9.jpeg") no-repeat;
@@ -557,6 +550,7 @@ ul.dropdown-menu li {
 .slider .block span {
   letter-spacing: 1px;
 }
+
 
 .intro-item i {
   font-size: 60px;
@@ -710,6 +704,14 @@ ul.dropdown-menu li {
   background-size: cover;
   padding: 120px 0px;
 }
+
+.slider {
+    background: url("../images/ab.jpeg") no-repeat;
+    background-size: cover;
+    background-position: 10% 0%;
+    padding: 200px 0 280px 0;
+    position: relative;
+  }
 
 .cta-block {
   background: url("../images/home-1.jpeg") no-repeat;
