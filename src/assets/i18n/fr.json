@@ -1,3 +1,9 @@
 {
-    "Home" : "accueil"
+    "HOME" : "accueil",
+    "ABOUT HUMANSUP": "à propos",
+    "TRAINING PROGRAMS":"Programme",
+    "EVENTS":"évenements",
+    "NEWS":"actualités",
+    "CONTACT":"CONTACT",
+    "SIGN IN":"Se connecter"
 }
