@@ -1,3 +1,10 @@
-#myVideo {
-    min-width: 100%; 
-  }
+.background-video{
+   padding: 0px;
+   width: 100%;
+}
+
+.flaticon{
+  width: 84px;
+  height: 84px;
+  margin-top: 0px;
+}

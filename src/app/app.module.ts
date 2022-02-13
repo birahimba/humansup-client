@@ -22,6 +22,7 @@ import { HttpClient} from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { CareersComponent } from './client-component/careers/careers.component';
 
 export function createTranslateLoader (httpClient: HttpClient){
   return new TranslateHttpLoader(httpClient, './assets/i18n/', '.json');
@@ -40,7 +41,8 @@ export function createTranslateLoader (httpClient: HttpClient){
     ContactComponent,
     PagenotfoundComponent,
     FooterComponent,
-    MaintenanceComponent
+    MaintenanceComponent,
+    CareersComponent
 
   ],
   imports: [
