@@ -5,7 +5,7 @@
 			<div class="row">
 				<div>
 					<div>
-						<video class="background-video" autoplay loop muted>
+						<video class="background-video" autoplay loop muted oncanplay="this.play()" onloadedmetadata="this.muted = true">
 							<source src="../../../assets/Humansup-video-sans -audio.mp4" type="video/mp4">
 						</video>
 					</div>
@@ -58,7 +58,7 @@
 	<!-- Section About Start -->
 
 	<section class="section about position-relative">
-		<div class="bg-about"></div>
+		<div data-aos="fade-right" class="bg-about"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 offset-lg-6 offset-md-0">
@@ -130,7 +130,7 @@
 						<h3 class="mt-3 mb-5 lh-36"><a href="#" class="text-white ">Ethiopia: Tigray on brink of
 								humanitarian disaster, UN says</a></h3>
 
-						<a href="blog-single.html"
+						<a href="#"
 							class="btn btn-small btn-solid-border btn-round-full text-white">Learn More</a>
 					</div>
 				</div>
@@ -149,7 +149,7 @@
 						<h3 class="mt-3 mb-5 lh-36"><a href="#" class="text-white">World’s poorest bear brunt of climate
 								crisis: 10 underreported emergencies</a></h3>
 
-						<a href="blog-single.html"
+						<a href="#"
 							class="btn btn-small btn-solid-border btn-round-full text-white">Learn More</a>
 					</div>
 				</div>
@@ -168,7 +168,7 @@
 						<h3 class="mt-3 mb-5 lh-36"><a href="#" class="text-white">Why the return of displaced people is
 								such a thorny issue in South Sudan</a></h3>
 
-						<a href="blog-single.html"
+						<a href="#"
 							class="btn btn-small btn-solid-border btn-round-full text-white">Learn More</a>
 					</div>
 				</div>
