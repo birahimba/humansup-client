@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { LanguageService } from './services/language/language.service';
+import * as Aos from 'aos';
+
+
 
 @Component({
   selector: 'app-root',
@@ -13,8 +16,13 @@ export class AppComponent {
 
   }
 
+  ngOnInit(){
+    Aos.init({
+      duration: 3000
+    });
+  }
+
   onActivate(event: any) {
-    // window.scroll(0,0);
  
     window.scroll({ 
             top: 0, 
