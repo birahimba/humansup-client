@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.titleService.setTitle('HUMAN\'Sup: School Of Humanitarian Sciences');
+    this.titleService.setTitle('HUMAN\'Sup: School Of Nexus Sciences');
     this.meta.addTag({
       name: 'Humansup',
       content: 'Humansup'
