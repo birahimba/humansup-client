@@ -16,10 +16,21 @@
 					<li class="nav-item active">
 						<a class="nav-link" routerLink="/home" (click)="ToggleNavBar()">{{"HOME" | translate}}<span class="sr-only">(current)</span></a>
 					</li>
-					<li class="nav-item" ><a class="nav-link" routerLink="/about" (click)="ToggleNavBar()">{{"ABOUT HUMANSUP" | translate}}</a></li>
-					<li class="nav-item"><a class="nav-link" routerLink="/programs" (click)="ToggleNavBar()">{{"TRAINING PROGRAMS" | translate}}</a></li>
+					<li class="nav-item" ><a class="nav-link" routerLink="/about" (click)="ToggleNavBar()">{{"ABOUT" | translate}}</a></li>
+					<li class="nav-item"><a class="nav-link" routerLink="/programs" (click)="ToggleNavBar()">{{"TRAINING" | translate}}</a></li>
 					<li class="nav-item"><a class="nav-link" routerLink="/events" (click)="ToggleNavBar()">{{"EVENTS" | translate}}</a></li>
-					<li class="nav-item"><a class="nav-link" routerLink="/home" (click)="ToggleNavBar()">{{"NEWS" | translate}}</a></li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							{{"COMMUNITY" | translate}}
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						  <a class="dropdown-item ddi" routerLink="/community/lecturers" (click)="ToggleNavBar()">{{"LECTURERS" | translate}}</a>
+						  <a class="dropdown-item ddi" routerLink="/community/speakers" (click)="ToggleNavBar()">{{"SPEAKERS" | translate}}</a>
+						  <a class="dropdown-item ddi" routerLink="/community/students" (click)="ToggleNavBar()">{{"STUDENTS" | translate}}</a>
+						  <a class="dropdown-item ddi" routerLink="/community/partners" (click)="ToggleNavBar()">{{"PARTNERS" | translate}}</a>
+						  <a class="dropdown-item ddi" routerLink="/community/blog" (click)="ToggleNavBar()">{{"BLOG" | translate}}</a>
+						</div>
+					  </li>
 					<li class="nav-item"><a class="nav-link" routerLink="/careers" (click)="ToggleNavBar()">{{"CAREERS" | translate}}</a></li>
 					<li class="nav-item"><a class="nav-link" routerLink="/contact" (click)="ToggleNavBar()">{{"CONTACT" | translate}}</a></li>
 				</ul>

@@ -23,6 +23,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { CareersComponent } from './client-component/careers/careers.component';
+import { LecturersComponent } from './client-component/community/lecturers/lecturers.component';
+import { SpeakersComponent } from './client-component/community/speakers/speakers.component';
+import { StudentsComponent } from './client-component/community/students/students.component';
+import { PartnersComponent } from './client-component/community/partners/partners.component';
+import { BlogComponent } from './client-component/community/blog/blog.component';
 
 export function createTranslateLoader (httpClient: HttpClient){
   return new TranslateHttpLoader(httpClient, './assets/i18n/', '.json');
@@ -42,7 +47,12 @@ export function createTranslateLoader (httpClient: HttpClient){
     PagenotfoundComponent,
     FooterComponent,
     MaintenanceComponent,
-    CareersComponent
+    CareersComponent,
+    LecturersComponent,
+    SpeakersComponent,
+    StudentsComponent,
+    PartnersComponent,
+    BlogComponent
 
   ],
   imports: [

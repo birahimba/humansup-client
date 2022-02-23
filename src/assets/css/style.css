@@ -16,7 +16,6 @@ body {
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
   color: #242424;
 }
 
@@ -26,12 +25,11 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: 2rem;
-  font-weight: 600;
   line-height: 42px;
 }
 
 h3, .h3 {
-  font-size: 1.5rem;
+  font-size: 19px;
 }
 
 h4, .h4 {
@@ -298,8 +296,7 @@ a:focus {
 }
 
 .content-title {
-  font-size: 30px;
-  line-height: 50px;
+  line-height: 37px;
 }
 
 .page-title {
@@ -401,13 +398,21 @@ a:focus {
 
 #navbar .nav-link {
   font-family: "Poppins",  sans-serif;
-  font-weight: bold;
   color: rgb(0, 0, 0);
   text-transform: uppercase;
   font-size: 16px;
   letter-spacing: .5px;
   transition: all .25s ease;
 }
+
+.ddi{
+  border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  width: 70%;
+  font-weight: 400;
+  padding: 1.2em 0;
+}
+
 
 #navbar .nav-link:hover, #navbar .nav-link:focus {
   color: #9c1c26;
@@ -872,13 +877,11 @@ ul.dropdown-menu li {
   width: 20px;
 }
 
-.social-icons li {
-  margin: 0 6px;
-}
 
-.social-icons i {
-  margin-right: 15px;
-  font-size: 25px;
+.social-icons, i {
+  margin-left: 74px;
+  font-size: 35px;
+  
 }
 
 .google-map {
@@ -1332,7 +1335,6 @@ h3.quote::before {
   }
   h2, .h2 {
     font-size: 1.3rem;
-    font-weight: 600;
     line-height: 36px;
   }
   .testimonial-item .testimonial-item-content {
@@ -1391,7 +1393,7 @@ h3.quote::before {
   }
   h2, .h2 {
     font-size: 1.3rem;
-    font-weight: 600;
+
     line-height: 36px;
   }
   .testimonial-item .testimonial-item-content {
