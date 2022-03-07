@@ -1274,6 +1274,7 @@ h3.quote::before {
 
 .footer .copyright a {
   font-weight: 600;
+  padding-left: 0px;
 }
 
 .lh-35 {
