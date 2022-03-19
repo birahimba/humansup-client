@@ -7,6 +7,17 @@
   max-width: 1314px;
 }
 
+.application-li{
+  /*background-color: #EF7B48;
+  padding-right: 15px;*/
+}
+
+.application-link{
+  background-color: #EF7B48;
+  background-size: auto;
+  font-family: "Poppins",  sans-serif;
+  letter-spacing: .5px;
+}
 
 @media (max-width: 820px){
   #navbarNavDropdown{

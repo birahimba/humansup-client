@@ -188,7 +188,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 }
 
 .section {
-  padding: 100px 0;
+  padding: 47px 0;
 }
 
 .section-sm {
@@ -196,7 +196,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 }
 
 .section-title {
-  margin-bottom: 70px;
+  margin: 3px;
 }
 
 .section-title .title {
@@ -393,6 +393,7 @@ a:focus {
 
 #navbar li {
   padding-left: 15px;
+  margin: auto;
  
 }
 
@@ -400,9 +401,10 @@ a:focus {
   font-family: "Poppins",  sans-serif;
   color: rgb(0, 0, 0);
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: .5px;
   transition: all .25s ease;
+  display: inline;
 }
 
 .ddi{
@@ -905,7 +907,7 @@ ul.dropdown-menu li {
 }
 
 .blog-item-content h3 a:hover {
-  color: #a31925 !important;
+  color: #A42f42!important;
 }
 
 .lh-36 {

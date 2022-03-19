@@ -13,11 +13,8 @@
 
 			<div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a class="nav-link" routerLink="/home" (click)="ToggleNavBar()">{{"HOME" | translate}}<span class="sr-only">(current)</span></a>
-					</li>
 					<li class="nav-item" ><a class="nav-link" routerLink="/about" (click)="ToggleNavBar()">{{"ABOUT" | translate}}</a></li>
-					<li class="nav-item"><a class="nav-link" routerLink="/programs" (click)="ToggleNavBar()">{{"TRAINING" | translate}}</a></li>
+					<li ><a class="application-link btn btn-lg" routerLink="/programs" (click)="ToggleNavBar()">{{"APPLICATION" | translate}}</a></li>
 					<li class="nav-item"><a class="nav-link" routerLink="/events" (click)="ToggleNavBar()">{{"EVENTS" | translate}}</a></li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
