@@ -1,5 +1,7 @@
 footer{
-    background-color: rgb(226, 226, 226);
+    background-color: #A42F42;
+    border-top: 12px solid #F09C3F;
+    margin-top: 18px;
 }
 
 .logo{
@@ -8,5 +10,22 @@ footer{
 }
 
 .sup{
-    color: brown;
+    color: white;
+}
+
+.widget{
+    color: aliceblue;
+}
+
+a{
+    color: white;
+}
+
+.title-footer{
+    color:white;
+    font-weight: bold;
+}
+
+.text-color{
+ color: white;
 }

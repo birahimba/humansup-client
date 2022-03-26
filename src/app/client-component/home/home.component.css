@@ -1,7 +1,4 @@
-.background-video{
-   padding: 0px;
-   width: 100%;
-}
+
 
 .flaticon{
   width: 84px;
@@ -9,3 +6,30 @@
   margin-top: 0px;
 }
 
+
+.section-intro{
+  background-color: #f6f3f3;
+  padding-top: 30px;
+  padding-left: 10px;
+  border-bottom: 12px solid white;
+}
+
+.carousel{
+  border-top: 12px solid #EF7B48;
+}
+
+.title-section2{
+ font-weight: bold; 
+ font-size:larger;
+}
+.title-section3{
+  font-weight: bold;
+}
+.content-section2{
+  color:#1F242A;
+ 
+}
+.button-section2{
+  padding-left: 77px;
+  padding-top: 44px;
+}
