@@ -1,14 +1,24 @@
-hr{
-    border: 1px solid rgb(158, 25, 25);
+.application-section{
+    background-color: #1F242A;
+    height: 710px;
+    padding-top: 50px ;
 }
 
-.cu{
+.application-title{
+    color: rgb(209, 146, 0);
     font-weight: bold;
-    color: rgb(240, 120, 9);
 }
 
+.application-body{
+    color:white;
+}  
 
-.cu-bloc{
-    padding-left: 30px ;
-    border-left: solid rgb(199, 199, 199);
+p, h4{
+    font-family: "Poppins", sans-serif;
+}
+
+.btn-brochure{
+ color: white;
+ background-color:#EF7B48 ;
+ border: 1px solid #EF7B48;
 }
