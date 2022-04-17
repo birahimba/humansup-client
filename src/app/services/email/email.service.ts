@@ -16,6 +16,6 @@ export class EmailService {
       })
     }
 
-    return this.httpreq.post("http://localhost:3000/email",body,headers);
+    return this.httpreq.post("http://localhost:3000/",body,headers);
   }
 }
