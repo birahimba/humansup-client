@@ -13,27 +13,48 @@
 
 			<div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item" ><a class="nav-link" routerLink="/about" (click)="ToggleNavBar()">{{"ABOUT" | translate}}</a></li>
-					<li ><a class="application-link btn btn-lg" routerLink="/programs" (click)="ToggleNavBar()">{{"APPLICATION" | translate}}</a></li>
-					<li class="nav-item"><a class="nav-link" routerLink="/events" (click)="ToggleNavBar()">{{"EVENTS" | translate}}</a></li>
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<a class="nav-link dropdown-toggle" routerLink="/about" id="navbarDropdown" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{"ABOUT" |
+							translate}}</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item ddi" routerLink="#"
+									(click)="ToggleNavBar()">{{"VISION" | translate}}</a>
+								<a class="dropdown-item ddi" routerLink="#"
+									(click)="ToggleNavBar()">{{"MISSION" | translate}}</a>
+							</div>
+						
+						</li>
+					<li><a class="application-link btn btn-lg" routerLink="/programs"
+							(click)="ToggleNavBar()">{{"APPLICATION" | translate}}</a></li>
+					<li class="nav-item"><a class="nav-link" routerLink="/events" (click)="ToggleNavBar()">{{"EVENTS" |
+							translate}}</a></li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							{{"COMMUNITY" | translate}}
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						  <a class="dropdown-item ddi" routerLink="/community/lecturers" (click)="ToggleNavBar()">{{"LECTURERS" | translate}}</a>
-						  <a class="dropdown-item ddi" routerLink="/community/speakers" (click)="ToggleNavBar()">{{"SPEAKERS" | translate}}</a>
-						  <a class="dropdown-item ddi" routerLink="/community/students" (click)="ToggleNavBar()">{{"STUDENTS" | translate}}</a>
-						  <a class="dropdown-item ddi" routerLink="/community/partners" (click)="ToggleNavBar()">{{"PARTNERS" | translate}}</a>
-						  <a class="dropdown-item ddi" routerLink="/community/blog" (click)="ToggleNavBar()">{{"BLOG" | translate}}</a>
+							<a class="dropdown-item ddi" routerLink="#"
+								(click)="ToggleNavBar()">{{"LECTURERS" | translate}}</a>
+							<a class="dropdown-item ddi" routerLink="#"
+								(click)="ToggleNavBar()">{{"SPEAKERS" | translate}}</a>
+							<a class="dropdown-item ddi" routerLink="#"
+								(click)="ToggleNavBar()">{{"STUDENTS" | translate}}</a>
+							<a class="dropdown-item ddi" routerLink="#"
+								(click)="ToggleNavBar()">{{"PARTNERS" | translate}}</a>
+							<a class="dropdown-item ddi" routerLink="#" (click)="ToggleNavBar()">{{"BLOG"
+								| translate}}</a>
 						</div>
-					  </li>
-					<li class="nav-item"><a class="nav-link" routerLink="/careers" (click)="ToggleNavBar()">{{"CAREERS" | translate}}</a></li>
-					<li class="nav-item"><a class="nav-link" routerLink="/contact" (click)="ToggleNavBar()">{{"CONTACT" | translate}}</a></li>
+					</li>
+					<li class="nav-item"><a class="nav-link" routerLink="#" (click)="ToggleNavBar()">{{"CAREERS"
+							| translate}}</a></li>
+					<li class="nav-item"><a class="nav-link" routerLink="/contact" (click)="ToggleNavBar()">{{"CONTACT"
+							| translate}}</a></li>
 				</ul>
 
 				<form class="form-lg-inline my-2 my-md-0 ml-lg-4 text-center">
-					<a routerLink="/donate" class="btn btn-solid-border btn-round-full">Donate</a>
+					<a routerLink="/donation" class="btn btn-solid-border btn-round-full">Donate</a>
 				</form>
 			</div>
 		</div>

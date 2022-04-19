@@ -28,6 +28,9 @@ import { SpeakersComponent } from './client-component/community/speakers/speaker
 import { StudentsComponent } from './client-component/community/students/students.component';
 import { PartnersComponent } from './client-component/community/partners/partners.component';
 import { BlogComponent } from './client-component/community/blog/blog.component';
+import { DonationComponent } from './client-component/donation/donation.component';
+import { VisionComponent } from './client-component/about/vision/vision.component';
+import { MissionComponent } from './client-component/about/mission/mission.component';
 
 export function createTranslateLoader (httpClient: HttpClient){
   return new TranslateHttpLoader(httpClient, './assets/i18n/', '.json');
@@ -52,7 +55,10 @@ export function createTranslateLoader (httpClient: HttpClient){
     SpeakersComponent,
     StudentsComponent,
     PartnersComponent,
-    BlogComponent
+    BlogComponent,
+    DonationComponent,
+    VisionComponent,
+    MissionComponent
 
   ],
   imports: [
