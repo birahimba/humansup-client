@@ -407,11 +407,8 @@ a:focus {
 }
 
 .ddi{
-  border-bottom: solid 1px rgba(0, 0, 0, 0.3);
-  margin: 0 auto;
-  width: 70%;
   font-weight: 400;
-  padding: 1.2em 0;
+  padding: 1.4em 0;
 }
 
 

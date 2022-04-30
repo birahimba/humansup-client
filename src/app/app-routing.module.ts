@@ -31,7 +31,7 @@ const routes: Routes = [
   { path: 'community/speakers', component: SpeakersComponent},
   { path: 'community/students', component: StudentsComponent},
   { path: 'about/vision', component: VisionComponent},
-  { path: 'about/mission', component:MissionComponent},
+  { path: 'about/mission', component: MissionComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', pathMatch: 'full', component: PagenotfoundComponent },
 
