@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HowHumansupComponent } from './client-component/about/how-humansup/how-humansup.component';
+import { ValuesComponent } from './client-component/about/values/values.component';
+import { VisionMissionComponent } from './client-component/about/vision-mission/vision-mission.component';
 import { CareersComponent } from './client-component/careers/careers.component';
 import { BlogComponent } from './client-component/community/blog/blog.component';
 import { LecturersComponent } from './client-component/community/lecturers/lecturers.component';
@@ -22,6 +25,9 @@ const routes: Routes = [
   { path: 'careers', component: CareersComponent},
   { path: 'community/blog', component: BlogComponent},
   { path: 'donation', component: DonationComponent},
+  { path: 'about/vision-mission', component: VisionMissionComponent},
+  { path: 'about/values', component: ValuesComponent},
+  { path: 'about/why-humansup', component: HowHumansupComponent},
   { path: 'community/lecturers', component: LecturersComponent},
   { path: 'community/partners', component: PartnersComponent},
   { path: 'community/speakers', component: SpeakersComponent},

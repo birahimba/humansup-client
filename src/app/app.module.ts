@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './client-component/navbar/navbar.component';
 import { HomeComponent } from './client-component/home/home.component';
-import { AboutComponent } from './client-component/about/about.component';
 import { ProgramsComponent } from './client-component/programs/programs.component';
 import { EventsComponent } from './client-component/events/events.component';
 import { NewsComponent } from './client-component/news/news.component';
@@ -18,7 +17,7 @@ import { AngularFireAuthModule } from "@angular/fire/compat/auth";
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { environment } from '../environments/environment';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClient} from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
@@ -29,13 +28,11 @@ import { StudentsComponent } from './client-component/community/students/student
 import { PartnersComponent } from './client-component/community/partners/partners.component';
 import { BlogComponent } from './client-component/community/blog/blog.component';
 import { DonationComponent } from './client-component/donation/donation.component';
-import { VisionComponent } from './client-component/about/vision/vision.component';
-import { MissionComponent } from './client-component/about/mission/mission.component';
-import { VisionMissionComponent } from './client-component/vision-mission/vision-mission.component';
-import { ValuesComponent } from './client-component/values/values.component';
-import { HowHumansupComponent } from './client-component/how-humansup/how-humansup.component';
+import { VisionMissionComponent } from './client-component/about/vision-mission/vision-mission.component';
+import { ValuesComponent } from './client-component/about/values/values.component';
+import { HowHumansupComponent } from './client-component/about/how-humansup/how-humansup.component';
 
-export function createTranslateLoader (httpClient: HttpClient){
+export function createTranslateLoader(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient, './assets/i18n/', '.json');
 }
 
@@ -45,7 +42,6 @@ export function createTranslateLoader (httpClient: HttpClient){
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    AboutComponent,
     ProgramsComponent,
     EventsComponent,
     NewsComponent,
@@ -60,8 +56,6 @@ export function createTranslateLoader (httpClient: HttpClient){
     PartnersComponent,
     BlogComponent,
     DonationComponent,
-    VisionComponent,
-    MissionComponent,
     VisionMissionComponent,
     ValuesComponent,
     HowHumansupComponent
@@ -84,7 +78,7 @@ export function createTranslateLoader (httpClient: HttpClient){
       }
     })
   ],
- 
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
